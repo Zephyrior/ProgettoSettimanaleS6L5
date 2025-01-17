@@ -6,13 +6,13 @@
 body {
     max-width: 100%;
 }
-.navbar img {
+.navbar img, #profilePic {
     max-width: 100px;
 }
 #kidsIcon {
     max-width: 30px;
 }
-footer {
+footer, #profile {
     width: 50%;
     margin: auto;
 }
