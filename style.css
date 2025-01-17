@@ -6,7 +6,7 @@
 body {
     max-width: 100%;
 }
-.navbar img, #profilePic {
+.navbar img {
     max-width: 100px;
 }
 #kidsIcon {
