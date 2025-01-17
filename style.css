@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+}
+.navbar img {
+    max-width: 100px;
+}
+#kidsIcon {
+    max-width: 30px;
+}
