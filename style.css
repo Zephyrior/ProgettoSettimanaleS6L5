@@ -12,3 +12,7 @@ body {
 #kidsIcon {
     max-width: 30px;
 }
+footer {
+    width: 50%;
+    margin: auto;
+}
