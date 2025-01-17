@@ -17,7 +17,7 @@
     <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container">
-        <a class="navbar-brand me-4" href="#"><img src="./Netflix-assets/assets/netflix_logo.png" class="img-fluid" /></a>
+        <a class="navbar-brand me-3" href="#"><img src="./Netflix-assets/assets/netflix_logo.png" class="img-fluid" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,19 +31,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item me-2">
+            <li class="nav-item me-1">
               <a class="nav-link text-light" href="#">Home</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-1">
               <a class="nav-link active text-light" aria-current="page" href="#">TV shows</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-1">
               <a class="nav-link text-light" href="#">Movies</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-1">
               <a class="nav-link text-light" href="#">Recently Added</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-1">
               <a class="nav-link text-light" href="#">My List</a>
             </li>
           </ul>
@@ -69,7 +69,7 @@
             <li class="nav-item mx-2">
               <a class="nav-link link-light" href="#"><i class="bi bi-bell-fill text-light"></i></a>
             </li>
-            <li class="nav-item dropdown mt-1"><img src="./Netflix-assets/assets/kids_icon.png" class="border border-1" id="kidsIcon" /></li>
+            <li class="nav-item mt-1"><div class="dropdown"><img src="./Netflix-assets/assets/kids_icon.png" class="border border-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="kidsIcon" /></div></li>
           </ul>
         </div>
       </div>
@@ -83,15 +83,19 @@
             Genres
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Action & Adventure</a></li>
+            <li><a class="dropdown-item" href="#">Anime</a></li>
+            <li><a class="dropdown-item" href="#">Children & Family</a></li>
+            <li><a class="dropdown-item" href="#">Classic</a></li>
+            <li><a class="dropdown-item" href="#">Documentaries</a></li>
+            <li><a class="dropdown-item" href="#">Horror</a></li>
+            <li><a class="dropdown-item" href="#">Western</a></li>
           </ul>
         </div>
       </div>
-      <button class="btn btn-sm bg-dark border rounded-0 active me-1"><i class="bi bi-list text-light"></i>
+      <button class="btn btn-sm bg-dark border rounded-0 active me-1" id="righe"><i class="bi bi-list text-light"></i>
       </button>
-      <button class="btn btn-sm bg-dark border rounded-0"><i class="bi bi-grid text-light"></i>
+      <button class="btn btn-sm bg-dark border rounded-0" id="grid"><i class="bi bi-grid text-light"></i>
       </button>
       </div>
     </div>
@@ -305,12 +309,29 @@
 
     <div class="container-fluid bg-dark p-0">
       <footer class="pt-5">
-        <div>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-twitter"></i></a>
-        <a href="#"><i class="bi bi-youtube"></i></a>
+        <div class="py-2">
+        <a class="text-secondary fs-4 me-3" href="#"><i class="bi bi-facebook"></i></a>
+        <a class="text-secondary fs-4 me-3" href="#"><i class="bi bi-instagram"></i></a>
+        <a class="text-secondary fs-4 me-3" href="#"><i class="bi bi-twitter"></i></a>
+        <a class="text-secondary fs-4 me-3" href="#"><i class="bi bi-youtube"></i></a>
       </div>
+      <div class="row mb-4">
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Audio and Subtitles</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Audio Description</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Help Center</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Gift Cards</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Media Center</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Investor Relations</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Jobs</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Terms of Use</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Privacy</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Legal Notices</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Cookie Preferences</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Corporate Informations</a></div>
+        <div class="col-6 col-md-4"><a class="link-secondary link-underline-opacity-0" href="#">Contact Us</a></div>
+      </div>
+      <button class="btn btn-sm btn-outline-secondary rounded-0">Service Code</button>
+      <p id="footerP" class="text-secondary py-4">© 1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</p>
       </footer>
     </div>
 

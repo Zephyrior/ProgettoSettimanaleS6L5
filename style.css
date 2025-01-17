@@ -16,3 +16,14 @@ footer {
     width: 50%;
     margin: auto;
 }
+
+footer a {
+    font-size: 10px;
+}
+#footerP {
+    font-size: 10px;
+}
+
+#righe, #grid {
+    margin-block: 2px;
+}
